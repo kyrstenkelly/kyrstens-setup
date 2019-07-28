@@ -1,5 +1,8 @@
 #!/bin/bash
 
+curl https://raw.githubusercontent.com/kyrstenkelly/kyrstens-setup/master/.bash_profile > ~/.bash_profile
+curl https://raw.githubusercontent.com/kyrstenkelly/kyrstens-setup/master/.gitconfig > ~/.gitconfig
+
 # Install xcode
 xcode-select --install
 
@@ -16,7 +19,11 @@ nvm use stable
 
 # Install and setup Git
 brew install git
+git config --global user.email "kyrsten.kelly@gmail.com"
+git config --global user.name "Kyrsten Kelly"
 git config --global alias.cob checkout -b
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
+curl https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.git-prompt.bash
 cp ./.git-completion.bash ~/.git-completion.bash
 cp ./.git-prompt.sh ~/.git-prompt.sh
 
