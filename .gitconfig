@@ -1,0 +1,38 @@
+[alias]
+	cob = checkout -b
+	co = checkout
+	hlog = log --all --graph --format=\"%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s\"
+	bd = branch -D
+	cp = cherry-pick
+	prom = pull --rebase origin master
+	ria = rebase --interactive --autosquash
+[user]
+	name = Kyrsten Kelly
+	email = kyrsten@udacity.com
+[color]
+	branch = auto
+	diff = true
+	status = auto
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = white
+	frag = magenta
+	old = red
+	new = green
+[color "status"]
+	added = green
+	changed = red
+	untracked = cyan
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[core]
+	editor = code --wait
