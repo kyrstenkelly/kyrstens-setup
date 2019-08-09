@@ -2,7 +2,8 @@
 # Kysten's Bash Profile
 # ---------------------
 
-source $(brew — prefix nvm)/nvm.sh
+source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
 export PATH="/usr/local/bin:$PATH"
 
 # ----- SETUP GIT -----
