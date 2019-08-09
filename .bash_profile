@@ -43,3 +43,5 @@ k() {
 # Tell ls to be colourful
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
+
+export PS1='\e[0;34m[\u]:\e[m\e[0;36m\w\$\e[m\e[0;32m ➭ \e[m'

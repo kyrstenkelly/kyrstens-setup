@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 curl https://raw.githubusercontent.com/kyrstenkelly/kyrstens-setup/master/.bash_profile > ~/.bash_profile
 curl https://raw.githubusercontent.com/kyrstenkelly/kyrstens-setup/master/.gitconfig > ~/.gitconfig
