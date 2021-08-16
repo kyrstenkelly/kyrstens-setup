@@ -6,8 +6,7 @@ source $(brew --prefix nvm)/nvm.sh
 export NVM_DIR=~/.nvm
 export PATH="/usr/local/bin:$PATH"
 
-# ----- SETUP GIT -----
-source ~/.git-completion.bash
+
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 # Git Prompt Settings
@@ -44,5 +43,3 @@ k() {
 # Tell ls to be colourful
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
-
-export PS1='\e[0;34m[\u]:\e[m\e[0;36m\w\$\e[m\e[0;32m ➭ \e[m'

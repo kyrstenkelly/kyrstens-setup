@@ -6,6 +6,10 @@ curl https://raw.githubusercontent.com/kyrstenkelly/kyrstens-setup/master/setup.
 . ~/setup.sh
 ```
 
+Additional setup steps:
+1. Set iTerm color theme: _Preferences > Profiles > Colors > Import_
+2. Add `source ~/.bash_profile` to iTerm _Preferences > Profiles > Command > Send Text at Start_
+
 ## Getting Git setup
 1. Create a [personal access token](https://github.com/settings/tokens)
 2. Use that token as password when prompted: 
